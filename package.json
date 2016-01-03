@@ -1,15 +1,17 @@
 {
-  "name": "foundation",
+  "name": "mean-foundation",
   "version": "0.0.1",
-  "description": "Some description of foundation",
+  "description": "Foundation CSS framework for Meanio",
   "author": {
-    "name": "mean scaffold"
+    "name": "Stone C. Lasley"
   },
   "mean": "0.5.5",
   "engines": {
     "node": "0.10.x",
     "npm": "1.4.x"
   },
-  "dependencies": {},
+  "dependencies": {
+    "foundation-apps": "^1.2.0"
+  },
   "license": "MIT"
 }

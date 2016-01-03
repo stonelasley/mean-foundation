@@ -23,8 +23,14 @@ Foundation.register(function(app, auth, database) {
     roles: ['authenticated'],
     menu: 'main'
   });
-  
-  Foundation.aggregateAsset('css', 'foundation.css');
+
+  app.set('views', __dirname + '/server/views');
+
+  Foundation.aggregateAsset('css', 'mean-foundation.css');
+  Foundation.aggregateAsset('js', 'mean-foundation.js');
+
+  Foundation.angularDependencies(['mean.system']);
+
 
   /**
     //Uncomment to use. Requires meanio@0.3.7 or above

@@ -8,4 +8,7 @@ angular.module('mean.foundation').controller('FoundationController', ['$scope', 
       name: 'foundation'
     };
   }
-]);
+]).config(['$viewPathProvider', function ($viewPathProvider) {
+  $viewPathProvider.override('system/views/header.html', 'foundation/views/header.html');
+  $viewPathProvider.override('system/views/index.html', 'foundation/views/index.html');
+}]);
